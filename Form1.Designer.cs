@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.Sync1 = new System.Windows.Forms.TextBox();
@@ -37,11 +38,13 @@
             this.Async2 = new System.Windows.Forms.TextBox();
             this.Async1 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(24, 24);
+            this.button1.Location = new System.Drawing.Point(28, 27);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 23);
             this.button1.TabIndex = 0;
@@ -51,7 +54,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(140, 24);
+            this.button2.Location = new System.Drawing.Point(144, 27);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 23);
             this.button2.TabIndex = 1;
@@ -61,7 +64,7 @@
             // 
             // Sync1
             // 
-            this.Sync1.Location = new System.Drawing.Point(24, 68);
+            this.Sync1.Location = new System.Drawing.Point(28, 71);
             this.Sync1.Name = "Sync1";
             this.Sync1.ReadOnly = true;
             this.Sync1.Size = new System.Drawing.Size(100, 23);
@@ -69,7 +72,7 @@
             // 
             // Sync2
             // 
-            this.Sync2.Location = new System.Drawing.Point(24, 97);
+            this.Sync2.Location = new System.Drawing.Point(28, 100);
             this.Sync2.Name = "Sync2";
             this.Sync2.ReadOnly = true;
             this.Sync2.Size = new System.Drawing.Size(100, 23);
@@ -77,7 +80,7 @@
             // 
             // Sync3
             // 
-            this.Sync3.Location = new System.Drawing.Point(24, 126);
+            this.Sync3.Location = new System.Drawing.Point(28, 129);
             this.Sync3.Name = "Sync3";
             this.Sync3.ReadOnly = true;
             this.Sync3.Size = new System.Drawing.Size(100, 23);
@@ -85,7 +88,7 @@
             // 
             // Async3
             // 
-            this.Async3.Location = new System.Drawing.Point(140, 126);
+            this.Async3.Location = new System.Drawing.Point(144, 129);
             this.Async3.Name = "Async3";
             this.Async3.ReadOnly = true;
             this.Async3.Size = new System.Drawing.Size(100, 23);
@@ -93,7 +96,7 @@
             // 
             // Async2
             // 
-            this.Async2.Location = new System.Drawing.Point(140, 97);
+            this.Async2.Location = new System.Drawing.Point(144, 100);
             this.Async2.Name = "Async2";
             this.Async2.ReadOnly = true;
             this.Async2.Size = new System.Drawing.Size(100, 23);
@@ -101,7 +104,7 @@
             // 
             // Async1
             // 
-            this.Async1.Location = new System.Drawing.Point(140, 68);
+            this.Async1.Location = new System.Drawing.Point(144, 71);
             this.Async1.Name = "Async1";
             this.Async1.ReadOnly = true;
             this.Async1.Size = new System.Drawing.Size(100, 23);
@@ -109,7 +112,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(78, 159);
+            this.button3.Location = new System.Drawing.Point(82, 162);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(100, 23);
             this.button3.TabIndex = 8;
@@ -117,11 +120,26 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(108, 188);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 15);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "label1";
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(264, 194);
+            this.ClientSize = new System.Drawing.Size(267, 216);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.Async3);
             this.Controls.Add(this.Async2);
@@ -149,5 +167,7 @@
         private TextBox Async2;
         private TextBox Async1;
         private Button button3;
+        private Label label1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
